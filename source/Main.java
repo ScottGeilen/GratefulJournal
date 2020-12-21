@@ -8,6 +8,6 @@ public class Main {
     public static void source() {
         Scanner scan = new Scanner(System.in);
         Entry entry = new Entry();
-        System.out.println(entry.gratefulTextInput(entry.todaysDate()));
+        System.out.println(entry.question(entry.todaysDate()));
     }
 }
