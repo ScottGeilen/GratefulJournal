@@ -15,14 +15,12 @@ public class Entry {
     Date date;
     String day;
     DateFormat df;
-    protected String getInput(String day, String today) {
-        question = askQuestion(day, today);
+    String ty;
+    protected String collectGratitude(String day, String today) {
+        System.out.println("What are you grateful for on "+day+", "+today+"?");
         gratefulDescription = scan.nextLine();
-        return gratefulDescription;
-    }
-    protected String askQuestion(String day, String today) {
-        ask = "What are you grateful for on "+day+", "+today+"?";
-        return ask;
+        ty = "Thank you for inputting your gratitude! <3";
+        return ty;
     }
     protected String getTodaysDate() {
         pattern = "MM/dd/yyyy";
